@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y U V I</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container" data-scroll-container>
+        <!-- Header -->
+        <div class="black"><video src="banner-video_low.mp4" autoplay loop class="firebase" muted></video></div>
+
+        <header data-scroll>
+            <nav>
+                <h1 class="yuvi">Y U V I</h1>
+                <ul>
+                    <li class="list"><a href="">home</a></li>
+                    <li class="list"><a href="">about</a></li>
+                    <li class="list"><a href="">our portfolio</a></li>
+                </ul>
+                <div class="btn"><button class="music">
+                        <audio src="Lukrembo - Travel (freetouse.com).mp3">
+                        </audio>
+                        <svg class="btn__icon mute-btn__icon absolute fill js-mute-icon" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 18 16" enable-background="new 0 0 18 16" xml:space="preserve"
+                            style="transform: scale(1, 0.15);">
+                            <line class="mute-btn__icon-line js-sound-line" stroke-width="2" x1="1" y1="0" x2="1"
+                                y2="16" data-svg-origin="1 16" transform="matrix(1,0,0,0.224,0,12.416)"
+                                style="transform-origin: 0px 0px; stroke: rgb(255, 255, 255);"></line>
+                            <line class="mute-btn__icon-line js-sound-line" stroke-width="2" x1="13" y1="0" x2="13"
+                                y2="16" data-svg-origin="13 16" transform="matrix(1,0,0,0.476,0,8.384)"
+                                style="transform-origin: 0px 0px; stroke: rgb(255, 255, 255);"></line>
+                            <line class="mute-btn__icon-line js-sound-line" stroke-width="2" x1="5" y1="0" x2="5"
+                                y2="16" data-svg-origin="5 16" transform="matrix(1,0,0,0.868,0,2.112)"
+                                style="transform-origin: 0px 0px; stroke: rgb(255, 255, 255);"></line>
+                            <line class="mute-btn__icon-line js-sound-line" stroke-width="2" x1="17" y1="0" x2="17"
+                                y2="16" data-svg-origin="17 16" transform="matrix(1,0,0,0.932,0,1.088)"
+                                style="transform-origin: 0px 0px; stroke: rgb(255, 255, 255);"></line>
+                            <line class="mute-btn__icon-line js-sound-line" stroke-width="2" x1="9" y1="0" x2="9"
+                                y2="16" data-svg-origin="9 16" transform="matrix(1,0,0,0.424,0,9.216)"
+                                style="transform-origin: 0px 0px; stroke: rgb(255, 255, 255);"></line>
+                        </svg>
+                    </button>
+                    <button id="dark" onclick="modechange()"><i class="fa-solid fa-moon"></i></button>
+                </div>
+
+            </nav>
+
+            <!-- video slider -->
+            <div class="page" data-scroll>
+                <div class="cursor">
+                    <div class="cursor"></div>
+                </div>
+
+                <h1 class="hard">
+                    <span class="hard-work" id="span1">Work Hard To</span>
+                    <span class="hard-work" id="span2">Improve Yourself</span>
+                </h1>
+                <video src="work hard.mp4" class="slider" autoplay muted loop>
+                </video>
+            </div>
+            <div class="runing">
+                <div class="kid">
+                    <img src="Child-walinkg.gif" alt="kid-run" class="kid-run">
+                    <img src="school-removebg-preview.png" alt="school" class="school">
+                </div>
+            </div>
+            <!-- book -->
+            <div class="work">
+                <input type="checkbox" id="checkbox-cover">
+                <input type="checkbox" id="checkbox-sheet1">
+                <input type="checkbox" id="checkbox-sheet2">
+                <input type="checkbox" id="checkbox-sheet3">
+                <div class="book">
+                    <div class="cover">
+                        <label for="checkbox-cover">
+                            <h1 class="diary">Diary</h1>
+                        </label>
+                    </div>
+                    <div class="sheet" id="sheet1">
+                        <div class="front-page">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae
+                                quia. Recusandae, fuga quas consectetur perferendis aperiam esse velit veniam ducimus?
+                                Quisquam consequatur perferendis quidem quia, recusandae ab!</p>
+                            <label class="next" for="checkbox-sheet1"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="egg.avif">
+                            <label class="prev" for="checkbox-sheet1"><i class="fas fa-chevron-left"></i></label>
+                        </div>
+                    </div>
+                    <div class="sheet" id="sheet2">
+                        <div class="front-page">
+                            <h2>Page 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae
+                                quia. Recusandae, fuga quas consectetur perferendis aperiam esse velit veniam ducimus?
+                                Quisquam consequatur perferendis quidem quia, recusandae ab!</p>
+                            <label class="next" for="checkbox-sheet2"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="2.jpg">
+                            <label class="prev" for="checkbox-sheet2"><i class="fas fa-chevron-left"></i></label>
+                        </div>
+                    </div>
+                    <div class="sheet" id="sheet3">
+                        <div class="front-page">
+                            <h2>Page 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae
+                                quia. Recusandae, fuga quas consectetur perferendis aperiam esse velit veniam ducimus?
+                                Quisquam consequatur perferendis quidem quia, recusandae ab!</p>
+                        </div>
+                    </div>
+                    <div class="back-cover"></div>
+                </div>
+            </div>
+            <div class="page1" data-scroll data-scroll-speed="5">
+                <div class="shorts-youtube">
+                    <iframe width="315" height="560" src="https://www.youtube.com/embed/GX4gVpmt7tc"
+                        title="Trick 73/100 Bgmi Blue Building Trick #bgmi #bgmitricks #bgmilive #bgmishorts #rankpush #tips #trick"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-scroll
+                        data-scroll-speed="10"></iframe>
+                </div>
+                <div class="shorts-youtube">
+                    <iframe width="315" height="560" src="https://www.youtube.com/embed/x4ym_BBQxQk"
+                        title="stop comparing yourself to others #motivation #motivatedtostudy #trending #viral #studymotivation"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-scroll
+                        data-scroll-speed="7"></iframe>
+                </div>
+                <div class="shorts-youtube">
+                    <iframe width="315" height="560" src="https://www.youtube.com/embed/5-oiLKEWIEw"
+                        title="Best Programming Languages #programming #coding #javascript" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-scroll
+                        data-scroll-speed="5"></iframe>
+                </div>
+                <div class="shorts-youtube">
+                    <iframe width="315" height="560" src="https://www.youtube.com/embed/On_4U0aeKG4"
+                        title="Infinite tic-tac-toe against my girl friend | Couple Game | GiiKER" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-scroll
+                        data-scroll-direction="horizontal" data-scroll-speed="3"></iframe>
+                </div>
+                <div class="back-img"></div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <div class="main" data-scroll>
+            <!-- first image -->
+            <div class="cont-box">
+                <div id="imgbox" data-scroll data-scroll-speed="10">
+                    <img src="lady.jpg" alt="image" width="100%" data-scroll>
+                    <div id="imgbox1">
+                        <img src="lady1.jpg" alt="" id="hello" data-scroll>
+                    </div>
+                    <span id="line"></span>
+                </div>
+            </div>
+            <!-- metro -->
+            <div class="blank">
+                <img src="metro.png" alt="" class="metro">
+            </div>
+        </div>
+        <!-- second image -->
+        <div class="cont-box1" data-scroll>
+            <div id="imgboxx" data-scroll data-scroll-speed="10" data-scroll-direction="horizontal">
+                <img src="cofee.jpg" alt="" width="100%">
+                <div id="imgbox2">
+                    <img src="cofee1.jpg" alt="" width="100%" id="hello1">
+                </div>
+                <span id="line1"></span>
+            </div>
+        </div>
+        
+            <footer>
+               
+                <div class="main-foot">
+                    <!-- <div class="container1">
+                        <div class="box5">
+                            <div class="btn5">
+                                <button class="play5"><img src="play.png" alt="play" class="playbtn"></button>
+                                <button class="delete"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <div class="vdo">
+                                <button class="onimg"><img src="play.png" alt="playbtn" class="center"
+                                        onclick="start1()"></button>
+                                <video src="Man speaking.mp4" width="200px" class="vid"></video>
+                            </div>
+                        </div> -->
+                    <div class="foot">
+                        <ul>
+                            <p>About</p>
+                            <li class="list1">Contact Us</li>
+                            <li class="list1">Career</li>
+                            <li class="list1">About Us</li>
+                            <li class="list1">Press</li>
+                        </ul>
+
+                    </div>
+                    <div class="foot">
+                        <ul>
+                            <p>Contact</p>
+                            <li class="list2">Email</li>
+                            <li class="list2">Mobile number</li>
+                            <li class="list2">Help Center</li>
+                            <li class="list2">Seekers</li>
+                        </ul>
+                    </div>
+                    <div class="foot">
+                        <ul>
+                            <p>Help</p>
+                            <li class="list3">Payment</li>
+                            <li class="list3">Shipping</li>
+                            <li class="list3">Import</li>
+                            <li class="list3">Export</li>
+                        </ul>
+                    </div>
+                    <div class="foot">
+                        <ul>
+                            <p>Policy</p>
+                            <li class="list4">Cancellation</li>
+                            <li class="list4">& Returns</li>
+                            <li class="list4">Terms Of Policy</li>
+                            <li class="list4">Sitemap</li>
+                        </ul>
+                    </div>
+                    <div class="line1"></div>
+                </div>
+                <hr>
+                <div class="first">
+                    <h5>Mail Us:</h5>
+                    <ul>
+                        <li class="listing">YUVI Privet Limited,Moti Nagar.13342</li>
+                        <li class="listing">moti nagr to chawla station,</li>
+                        <li class="listing">contact to</li>
+                        <li class="listing">9937473828</li>
+                        <li class="listing">Manglore,Motinagar,1220345,INDIA</li>
+                        <li class="listing"><i class="fa-brands fa-instagram"></i><i
+                                class="fa-brands fa-facebook"></i><i class="fa-brands fa-whatsapp"></i></li>
+                    </ul>
+                </div>
+
+                <div class="some">
+                    <ul>
+                        <li class="footing"><a href="#">Become a Seller</a></li>
+                        <li class="footing"><a href="#"><i class="fa-solid fa-star"
+                                    style="color: #FFD43B;"></i>Advertise</a></li>
+                        <li class="footing"><a href="#"><i class="fa-solid fa-gift" style="color: #FFD43B;"></i>Gift
+                                Cards</a></li>
+                        <li class="footing"><a href="#"><i class="fa-solid fa-circle-info"
+                                    style="color: #FFD43B;"></i>Help Center</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="lady-speak">
+                   
+                    </div> -->
+            </footer>
+            <div class="niche">Copyright&copy;2020-2024</div>
+        </div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
